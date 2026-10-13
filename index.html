@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalCurrency Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.11.1/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="glass-panel">
+        <h1>GlobalCurrency (GLBC)</h1>
+        <p id="status">Status: Disconnected</p>
+        <button id="connectBtn">Connect Wallet</button>
+        <div id="dashboard" class="hidden">
+            <div class="info-card">
+                <h3>Your Address</h3>
+                <p id="walletAddress">...</p>
+            </div>
+            <div class="action-card">
+                <h3>Send GLBC</h3>
+                <input type="text" id="recipient" placeholder="Recipient Address (0x...)">
+                <input type="number" id="amount" placeholder="Amount">
+                <button id="sendBtn">Send Tokens</button>
+                <p id="txStatus"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
